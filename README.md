@@ -57,7 +57,7 @@ JsonPowerDB is used as the backend database to store and manage student data eff
 <img width="1909" height="1086" alt="image" src="https://github.com/user-attachments/assets/1d3269a3-d91b-412b-bed7-cbb75dffeb5d" />
 
 
---
+---
 
 ## Examples of Use
 
