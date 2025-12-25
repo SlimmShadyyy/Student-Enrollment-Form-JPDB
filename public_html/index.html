@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Student Enrollment Form</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap 3 -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+            >
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <h2 class="text-center">Student Enrollment Form</h2>
+
+            <form id="studentForm">
+
+                <!-- Roll No (Primary Key) -->
+                <div class="form-group">
+                    <label>Roll No</label>
+                    <input type="text" class="form-control" id="rollNo"
+                          onChange='getStudent()'>
+                </div>
+                
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" id="fullName" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label>Class</label>
+                    <input type="text" class="form-control" id="studentClass" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label>Birth Date</label>
+                    <input type="date" class="form-control" id="birthDate" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea class="form-control" id="address" disabled></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Enrollment Date</label>
+                    <input type="date" class="form-control" id="enrollDate" disabled>
+                </div>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-success"
+                            id="save" disabled onclick="saveStudent()">Save</button>
+
+                    <button type="button" class="btn btn-warning"
+                            id="change" disabled onclick="updateStudent()">Update</button>
+
+                    <button type="button" class="btn btn-default"
+                            id="reset" disabled onclick="resetForm()">Reset</button>
+                </div>
+
+            </form>
+        </div>
+        <!-- JsonPowerDB Library -->
+        <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+        <script src='js/index.js'></script>
+    </body>
+</html>
